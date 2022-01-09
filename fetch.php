@@ -35,6 +35,8 @@ $cache = implode("\n", array_slice(explode("\n", $cache), 6));
 $new_found = "";
 $usciti = 0;
 $usciti_nuovi = 0;
+$fascia = 2;
+$sessione = 1;
 
 foreach($settori as $settore) {
 	
@@ -44,14 +46,14 @@ foreach($settori as $settore) {
 		continue;
 	}
 
-	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_2018.php', false, stream_context_create([
+	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_2021.php', false, stream_context_create([
 	    'http' => [
 	        'method' => 'POST',
 	        'header'  => "Content-type: application/x-www-form-urlencoded",
 	        'content' => http_build_query([
 	            'settore' => $settore,
-		    'fascia' => '2',
-		    'sessione' => '6'
+		    'fascia' => $fascia,
+		    'sessione' => $dessione
 	        ])
 	    ]
 	]));
@@ -68,8 +70,8 @@ foreach($settori as $settore) {
 		$usciti++;
 		$usciti_nuovi++;
 		$new_found = "- " . date("d/m/Y") . ": " . $settore .
-			" ([I Fascia](https://asn18.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/6), " .
-			"[II Fascia](https://asn18.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/6))\n" .
+			" ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/" . $sessione . "), " .
+			"[II Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/" . $sessione . "))\n" .
 			$new_found;
 		file_put_contents("README.md", $new_found . $cache);
 	}
@@ -80,6 +82,6 @@ foreach($settori as $settore) {
 echo "\n$usciti_nuovi nuovi settori pubblicati.\n";
 echo "Usciti $usciti settori su " . count($settori) . ".\n";
 $new_found = "Usciti " . $usciti . " settori su " . count($settori) . ".\n\n" . $new_found;
-$new_found = "# Risultati VI Quadrimestre\n\n" . $new_found;
+$new_found = "# Risultati Quadrimestre " . $sessione . "\n\n" . $new_found;
 $new_found = "![logo](img/logo.png)\n\n" . $new_found;
 file_put_contents("README.md", $new_found . $cache);
