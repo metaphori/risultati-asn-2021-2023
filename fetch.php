@@ -75,8 +75,6 @@ foreach($settori as $settore) {
 			$new_found;
 		file_put_contents("README.md", $new_found . $cache);
 	}
-
-	usleep(500000);
 }
 
 echo "\n$usciti_nuovi nuovi settori pubblicati.\n";
