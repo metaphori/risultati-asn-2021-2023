@@ -62,7 +62,7 @@ foreach($settori as $settore) {
 		exit(1);
 
 	
-	$pubblicato = (strstr($page, "non ci sono risultati in pubblicazione") == FALSE);
+	$pubblicato = in_array("location", $http_response_header); // (strstr($page, "non ci sono risultati in pubblicazione") == FALSE);
 
 	echo "$settore: " . ($pubblicato ? "SÌ" : "NO") . "\n";
 
