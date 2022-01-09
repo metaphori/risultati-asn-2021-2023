@@ -53,7 +53,7 @@ foreach($settori as $settore) {
 	        'content' => http_build_query([
 	            'settore' => $settore,
 		    'fascia' => $fascia,
-		    'sessione' => $dessione
+		    'sessione' => $sessione
 	        ])
 	    ]
 	]));
