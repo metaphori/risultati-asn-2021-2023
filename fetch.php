@@ -22,12 +22,16 @@ $settori = array(
 	'14/C2', '14/C3', '14/D1'
 );
 
-$cache = file_get_contents("README.md");
+$sessione = 1;
+$filename = "README-" $session . ".md";
+$filename_curr = "README.md";
+
+$cache = file_get_contents($filename);
 if(!$cache) {
-	file_put_contents("README.md", "\n");
-	$cache = file_get_contents("README.md");
+	file_put_contents($filename, "\n");
+	$cache = file_get_contents($filename);
 	if(!$cache) {
-		die("Cannot access README.md file");
+		die("Cannot access file " . );
 	}
 }
 $cache = implode("\n", array_slice(explode("\n", $cache), 6));
@@ -36,7 +40,7 @@ $new_found = "";
 $usciti = 0;
 $usciti_nuovi = 0;
 $fascia = 2;
-$sessione = 1;
+
 
 foreach($settori as $settore) {
 	
@@ -73,7 +77,7 @@ foreach($settori as $settore) {
 			" ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/" . $sessione . "), " .
 			"[II Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/" . $sessione . "))\n" .
 			$new_found;
-		file_put_contents("README.md", $new_found . $cache);
+		file_put_contents($filename, $new_found . $cache);
 	}
 }
 
@@ -82,4 +86,5 @@ echo "Usciti $usciti settori su " . count($settori) . ".\n";
 $new_found = "Usciti " . $usciti . " settori su " . count($settori) . ".\n\n" . $new_found;
 $new_found = "# Risultati Quadrimestre " . $sessione . "\n\n" . $new_found;
 $new_found = "![logo](img/logo.png)\n\n" . $new_found;
-file_put_contents("README.md", $new_found . $cache);
+file_put_contents($filename, $new_found . $cache);
+file_put_contents($filename_curr, $new_found . $cache);
