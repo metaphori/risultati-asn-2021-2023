@@ -31,7 +31,7 @@ if(!$cache) {
 	file_put_contents($filename, "\n");
 	$cache = file_get_contents($filename);
 	if(!$cache) {
-		die("Cannot access file " . );
+		die("Cannot access file " . filename);
 	}
 }
 $cache = implode("\n", array_slice(explode("\n", $cache), 6));
