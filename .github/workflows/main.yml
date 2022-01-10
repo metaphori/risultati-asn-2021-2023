@@ -19,7 +19,7 @@ jobs:
         run: |
           git config --local user.email "asn@example.com"
           git config --local user.name "ASN Bot"
-          git add README.md
+          git add README*
           git diff-index --quiet HEAD || git commit -m "Update results"
 
       - name: Push changes
