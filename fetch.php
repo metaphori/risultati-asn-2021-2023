@@ -23,7 +23,7 @@ $settori = array(
 );
 
 $sessione = 1;
-$filename = "README-" $session . ".md";
+$filename = "README-" $sessione . ".md";
 $filename_curr = "README.md";
 
 $cache = file_get_contents($filename);
