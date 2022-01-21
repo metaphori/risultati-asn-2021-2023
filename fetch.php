@@ -23,7 +23,7 @@ $settori = array(
 );
 
 $sessione = 1;
-$filename = "README-" . $sessione . ".md";
+$filename = "Quadrimestre-" . $sessione . ".md";
 $filename_curr = "README.md";
 
 $cache = file_get_contents($filename);
