@@ -73,7 +73,7 @@ foreach($settori as $settore) {
 	if($pubblicato) {
 		$usciti++;
 		$usciti_nuovi++;
-		$new_found = "- " . date("d/m/Y") . ": " . $settore .
+		$new_found = "- " . date("d/m/Y H:i") . ": " . $settore .
 			" ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/" . $sessione . "), " .
 			"[II Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/" . $sessione . "))\n" .
 			$new_found;
