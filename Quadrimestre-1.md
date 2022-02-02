@@ -2,8 +2,9 @@
 
 # Risultati Quadrimestre 1
 
-Usciti 141 settori su 190.
+Usciti 142 settori su 190.
 
+- 02/02/2022 16:53: 12/F1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/12%252FF1/1/1), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/12%252FF1/2/1))
 - 02/02/2022 14:45: 11/C4 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/11%252FC4/1/1), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/11%252FC4/2/1))
 - 02/02/2022 14:45: 06/L1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/06%252FL1/1/1), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/06%252FL1/2/1))
 - 02/02/2022 14:45: 06/A1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/06%252FA1/1/1), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/06%252FA1/2/1))
