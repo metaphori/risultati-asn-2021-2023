@@ -22,7 +22,7 @@ $settori = array(
 	'14/C2', '14/C3', '14/D1'
 );
 
-$sessione = 1;
+$sessione = 3;
 $filename = "Quadrimestre-" . $sessione . ".md";
 $filename_curr = "README.md";
 
