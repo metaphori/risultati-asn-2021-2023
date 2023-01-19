@@ -62,7 +62,7 @@ foreach($settori as $settore) {
 		continue;
 	}
 	
-	$url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$quadrimestre;
+	$url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$sessione;
 	$page = get_page($url);
 
 	/*
