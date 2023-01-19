@@ -1,6 +1,18 @@
 #!/usr/bin/env php
 <?php
 
+function get_page($url)
+{
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)');
+        $output = curl_exec($ch);
+	curl_close($ch);
+
+	return $output;
+}
+
 $settori = array(
 	'01/A1', '01/A2', '01/A3', '01/A4', '01/A5', '01/A6', '01/B1', '02/A1', '02/A2', '02/B1', '02/B2',
 	'02/C1', '02/D1', '03/A1', '03/A2', '03/B1', '03/B2', '03/C1', '03/C2', '03/D1', '03/D2', '04/A1',
@@ -49,7 +61,11 @@ foreach($settori as $settore) {
 		$usciti++;
 		continue;
 	}
+	
+	$url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$quadrimestre;
+	$page = get_page($url);
 
+	/*
 	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_2021.php', false, stream_context_create([
 	    'http' => [
 	        'method' => 'POST',
@@ -61,6 +77,7 @@ foreach($settori as $settore) {
 	        ])
 	    ]
 	]));
+	*/
 
 	if($page === FALSE)
 		exit(1);
