@@ -62,10 +62,9 @@ foreach($settori as $settore) {
 		continue;
 	}
 	
-	$url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$sessione;
-	$page = get_page($url);
+	// $url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$sessione;
+	// $page = get_page($url);
 
-	/*
 	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_2021.php', false, stream_context_create([
 	    'http' => [
 	        'method' => 'POST',
@@ -77,7 +76,6 @@ foreach($settori as $settore) {
 	        ])
 	    ]
 	]));
-	*/
 
 	if($page === FALSE)
 		exit(1);
