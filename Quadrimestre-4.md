@@ -2,8 +2,9 @@
 
 # Risultati Quadrimestre 4
 
-Usciti 23 settori su 190.
+Usciti 24 settori su 190.
 
+- 27/01/2023 12:26: 04/A4 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/04%252FA4/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/04%252FA4/2/4))
 - 26/01/2023 18:24: 10/N3 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FN3/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FN3/2/4))
 - 26/01/2023 18:24: 10/L1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FL1/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FL1/2/4))
 - 26/01/2023 14:17: 07/H4 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/07%252FH4/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/07%252FH4/2/4))
