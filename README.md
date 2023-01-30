@@ -2,8 +2,16 @@
 
 # Risultati Quadrimestre 4
 
-Usciti 24 settori su 190.
+Usciti 32 settori su 190.
 
+- 30/01/2023 14:18: 10/M2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FM2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FM2/2/4))
+- 30/01/2023 14:18: 10/F2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FF2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FF2/2/4))
+- 30/01/2023 14:18: 05/H2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FH2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FH2/2/4))
+- 30/01/2023 14:18: 05/H1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FH1/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FH1/2/4))
+- 30/01/2023 14:18: 05/A2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FA2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/05%252FA2/2/4))
+- 30/01/2023 14:18: 03/D2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/03%252FD2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/03%252FD2/2/4))
+- 30/01/2023 14:18: 02/B2 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/02%252FB2/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/02%252FB2/2/4))
+- 30/01/2023 14:18: 01/A5 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/01%252FA5/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/01%252FA5/2/4))
 - 27/01/2023 12:26: 04/A4 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/04%252FA4/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/04%252FA4/2/4))
 - 26/01/2023 18:24: 10/N3 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FN3/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FN3/2/4))
 - 26/01/2023 18:24: 10/L1 ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FL1/1/4), [II Fascia](https://asn21.cineca.it/pubblico/miur/esito/10%252FL1/2/4))
