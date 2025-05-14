@@ -34,8 +34,9 @@ $settori = array(
 	'14/C2', '14/C3', '14/D1'
 );
 
+$asn_year = 23;
 $sessione = 4;
-$filename = "Quadrimestre-" . $sessione . ".md";
+$filename = "ASN" . $asn_year . "-Quadrimestre-" . $sessione . ".md";
 $filename_curr = "README.md";
 
 $cache = file_get_contents($filename);
@@ -65,7 +66,7 @@ foreach($settori as $settore) {
 	// $url = "https://asn21.cineca.it/pubblico/miur/esito/".str_replace("/", "%252F",$settore)."/1/".$sessione;
 	// $page = get_page($url);
 
-	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_2021.php', false, stream_context_create([
+	$page = file_get_contents('https://abilitazione.miur.it/public/pubblicarisultati_20' . $asn_year . '.php', false, stream_context_create([
 	    'http' => [
 	        'method' => 'POST',
 	        'header'  => "Content-type: application/x-www-form-urlencoded",
@@ -89,8 +90,8 @@ foreach($settori as $settore) {
 		$usciti++;
 		$usciti_nuovi++;
 		$new_found = "- " . $procDate . ": " . $settore .
-			" ([I Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/" . $sessione . "), " .
-			"[II Fascia](https://asn21.cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/" . $sessione . "))\n" .
+			" ([I Fascia](https://asn". $asn_year . ".cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/1/" . $sessione . "), " .
+			"[II Fascia](https://asn". $asn_year . ".cineca.it/pubblico/miur/esito/" . str_replace("/", "%252F", $settore) . "/2/" . $sessione . "))\n" .
 			$new_found;
 		file_put_contents($filename, $new_found . $cache);
 	}
