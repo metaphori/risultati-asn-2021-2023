@@ -100,7 +100,7 @@ foreach($settori as $settore) {
 echo "\n$usciti_nuovi nuovi settori pubblicati.\n";
 echo "Usciti $usciti settori su " . count($settori) . ".\n";
 $new_found = "Usciti " . $usciti . " settori su " . count($settori) . ".\n\n" . $new_found;
-$new_found = "# Risultati Quadrimestre " . $sessione . "\n\n" . $new_found;
+$new_found = "# Risultati ASN " . $asn_year . " - Quadrimestre " . $sessione . "\n\n" . $new_found;
 $new_found = "![logo](img/logo.png)\n\n" . $new_found;
 file_put_contents($filename, $new_found . $cache);
 file_put_contents($filename_curr, $new_found . $cache);
