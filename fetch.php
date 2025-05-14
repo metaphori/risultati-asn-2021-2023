@@ -81,8 +81,10 @@ foreach($settori as $settore) {
 	if($page === FALSE)
 		exit(1);
 
+	echo $page;
+	echo $http_respomnse_header;
 	
-	$pubblicato = preg_grep("/[l|L]ocation:/", $http_response_header) != false; // (strstr($page, "non ci sono risultati in pubblicazione") == FALSE);
+	$pubblicato = preg_grep("/[l|L]ocation:/", $http_response_header) != false; // (strstr($page, "Non ci sono risultati in pubblicazione") == FALSE);
 
 	echo "$settore: " . ($pubblicato ? "SÌ" : "NO") . "\n";
 
