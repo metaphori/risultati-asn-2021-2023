@@ -81,8 +81,8 @@ foreach($settori as $settore) {
 	if($page === FALSE)
 		exit(1);
 
-	echo $page;
-	echo $http_respomnse_header;
+	// echo $page;
+	echo $http_response_header;
 	
 	$pubblicato = preg_grep("/[l|L]ocation:/", $http_response_header) != false; // (strstr($page, "Non ci sono risultati in pubblicazione") == FALSE);
 
